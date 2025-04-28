@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
-    "moduleResolution": "node16", // Required for ESM in Node.js
+    "moduleResolution": "node16", 
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -12,8 +12,8 @@
     "allowSyntheticDefaultImports": true
   },
   "ts-node": {
-    "esm": true, // Enable ESM support for ts-node
-    "transpileOnly": true // Skip type checking for faster builds
+    "esm": true, 
+    "transpileOnly": true 
   },
   "include": ["src/scripts/**/*"],
   "exclude": ["node_modules"]
