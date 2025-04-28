@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "A TypeScript and React-based static site generator",
   "main": "index.js",
+  "type": "module", // Enable ESM
   "scripts": {
-    "build": "ts-node src/scripts/build.ts",
-    "dev": "ts-node src/scripts/build.ts && serve dist",
+    "build": "ts-node --esm --project tsconfig.node.json src/scripts/build.ts",
+    "dev": "ts-node --esm --project tsconfig.node.json src/scripts/build.ts && serve dist",
     "tailwind": "tailwindcss -i src/styles/input.css -o dist/styles.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,10 +21,14 @@
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
+    "@types/node": "^22.7.4", // Added for Node.js types
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "serve": "^14.2.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
+  },
+  "engines": {
+    "node": ">=18" // Ensure Node.js 18 or higher
   }
 }
