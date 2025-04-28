@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "A TypeScript and React-based static site generator",
   "main": "index.js",
-  "type": "module", // Enable ESM
+  "type": "module", 
   "scripts": {
     "build": "ts-node --esm --project tsconfig.node.json src/scripts/build.ts",
     "dev": "ts-node --esm --project tsconfig.node.json src/scripts/build.ts && serve dist",
@@ -21,7 +21,7 @@
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {
-    "@types/node": "^22.7.4", // Added for Node.js types
+    "@types/node": "^22.7.4", 
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0",
     "serve": "^14.2.4",
@@ -29,6 +29,6 @@
     "typescript": "^5.8.3"
   },
   "engines": {
-    "node": ">=18" // Ensure Node.js 18 or higher
+    "node": ">=18" 
   }
 }
